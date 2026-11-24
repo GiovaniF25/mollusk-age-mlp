@@ -1,14 +1,12 @@
 # Mollusk Age Estimation with a Neural Network
 
-This project uses simulated mollusk measurements from a classroom exercise inspired by Abalone. It compares a multilayer perceptron (MLP) with linear regression and a baseline that predicts the mean age in the training set.
+This project adapts a classroom exercise inspired by Abalone and uses simulated mollusk measurements. It compares a multilayer perceptron (MLP) with linear regression and a baseline that predicts the mean age in the training set.
 
 ## Run locally
 
 From the repository folder on Linux or WSL, run the following commands with Python 3.12.
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
 python -m pip install -r requirements.txt
 python model.py train
 python model.py predict --data data/prediction_example.csv
@@ -38,4 +36,4 @@ The MLP reduced mean absolute error by about 47% relative to linear regression o
 
 ## Notebook
 
-Open [analysis.ipynb](analysis.ipynb) in VS Code with the Jupyter extension, select the virtual environment as the kernel, and run all cells. The notebook generates the simulated data and plots predicted versus simulated ages for both regression models.
+Open [analysis.ipynb](analysis.ipynb) in VS Code with the Jupyter extension, select a Python kernel with the project dependencies installed, and run all cells. The notebook generates the simulated data and plots predicted versus simulated ages for both regression models.
