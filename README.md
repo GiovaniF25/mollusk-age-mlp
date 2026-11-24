@@ -4,7 +4,7 @@ This project adapts a classroom exercise inspired by Abalone and uses simulated 
 
 ## Run locally
 
-From the repository folder on Linux or WSL, run the following commands with Python 3.12.
+Run these commands from the repository folder with Python 3.12.
 
 ```bash
 python -m pip install -r requirements.txt
